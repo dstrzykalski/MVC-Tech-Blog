@@ -5,13 +5,24 @@ const seedComments = require('./commentSeeds');
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
-  await sequelize.sync({ force: true });
+  try {
+    await sequelize.sync({ force: true });
+    console.log('Database synced');
 
-  await seedUsers();
-  await seedPosts();
-  await seedComments();
+    await seedUsers();
+    console.log('Users seeded');
 
-  process.exit(0);
+    await seedPosts();
+    console.log('Posts seeded');
+
+    await seedComments();
+    console.log('Comments seeded');
+
+    process.exit(0);
+  } catch (err) {
+    console.error('Failed to seed database:', err);
+    process.exit(1);
+  }
 };
 
 seedAll();

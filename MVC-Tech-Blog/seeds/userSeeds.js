@@ -1,4 +1,6 @@
+console.log('Starting user seed script');
 const { User } = require('../models');
+console.log('User model imported');
 
 const userData = [
   {
@@ -13,10 +15,12 @@ const userData = [
 ];
 
 const seedUsers = async () => {
+  console.log('Seeding users');
   await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
+  console.log('Users seeded');
 };
 
 module.exports = seedUsers;
