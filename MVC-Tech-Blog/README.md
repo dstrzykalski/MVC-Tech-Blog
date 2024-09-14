@@ -2,6 +2,31 @@
 
 Challenge 12 - Daved Strzykalski
 
+## Features
+
+MVC Style Tech Blog Project
+Express
+Session
+Handlebars
+Sequelize
+Bcrypt
+
+## References
+
+This Project was built using Project 2 as a Template, as such all members who contributed to the Green Acres Project are owed credit
+
+Online References were used in certain instances when errors were encountered.
+
+Class Contents and Resources Associated with Dependencies also Referenced
+
+## Issues
+
+Right Now The Project is Non Functional Although a lot of time was put into getting the code to the point were it is at.
+
+The Current issue seems to be in Seeding the Database.
+
+The Issue is currently being looked into.
+
 ## Your Task
 
 Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
